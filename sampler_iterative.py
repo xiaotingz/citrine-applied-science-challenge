@@ -322,7 +322,7 @@ def main(args):
 	var_groups = constraint.var_groups
 	num_sample = int(argv[3])
 
-	x_list = np.zeros([1000, constraint.n_dim])
+	x_list = np.zeros([num_sample, constraint.n_dim])
 	for sample in range(num_sample):
 		# Sample variables from graph to graph 
 		x = np.array([None] * constraint.n_dim)
